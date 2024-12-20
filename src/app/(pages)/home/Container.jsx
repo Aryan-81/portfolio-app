@@ -1,5 +1,5 @@
 import styles from './Container.module.css';
-import data from './homeData.json';
+import data from '/public/data/homeData.json';
 
 function Container() {
   return (
