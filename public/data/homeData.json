@@ -1,4 +1,10 @@
 {
+    "name": "Dr. Yogesh Madhukarrao Nimdeo",
+    "occupation":"Assistant Professor",
+    "currentPosition":"HOD of Chemical Engineering Department",
+    "at":"At IIT Jammu",
+    "email":"yogesh.nimdeo@iitjammu.ac.in",
+    "Telephone": "123321123",
     "quote": "Like a master chef in the kitchen of molecules, chemical engineers concoct recipes for progress, blending elements with precision to create a world of infinite possibilities.",
     "message": {
       "title": "Message",
@@ -32,6 +38,11 @@
       "2006: Elected as the general secretary of the Department of Chemical Engineering at COET Akola, India.",
       "2006: Second prize in an oral presentation at National Symposium on Polymer Technology, Gwalior, India",
       "2006: Third prize in National level Quiz Competition at Gwalior, India."
+    ],
+    "EducationQualification":[
+      "Ph.D. - (July 2010 - Feb 2017) - Indian Institute of Technology (IIT) Kanpur, Kanpur, India - 2017",
+      "M. Chem. Engg. - (2007 - 2009) - Institute of Chemical Technology (ICT) Mumbai, India - 2009",
+      "B. Tech. - (2003 - 2007) - Amravati University (COET Akola), Maharashtra, India - 2007"
     ]
   }
   

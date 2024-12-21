@@ -1,5 +1,5 @@
 import styles from './Details.module.css';
-import data from './DetailsData.json';
+import data from '/public/data/aboutData.json';
 
 function Details() {
   return (

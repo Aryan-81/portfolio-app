@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import LabEq from './LabEq';
 
 
-const header_bkimg = '../../assets/facilities.jpg';
+const header_bkimg = '/assets/facilities.jpg';
 
 function Facilities() {
     return (

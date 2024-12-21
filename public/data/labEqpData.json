@@ -1,0 +1,33 @@
+[
+    {
+      "name": "ep1",
+      "image": "/assets/equipments/eqp1.jpg",
+      "model": "A1234",
+      "description": "High-precision equipment for testing."
+    },
+    {
+      "name": "ep2",
+      "image": "/assets/equipments/eqp2.jpg",
+      "model": "B5678",
+      "description": "Advanced lab equipment for measurements."
+    },
+    {
+      "name": "ep3",
+      "image": "/assets/equipments/eqp3.jpg",
+      "model": "C91011",
+      "description": "State-of-the-art analytical tools."
+    },
+    {
+      "name": "ep4",
+      "image": "/assets/equipments/eqp4.jpg",
+      "model": "D121314",
+      "description": "Precision instruments for research."
+    },
+    {
+      "name": "ep5",
+      "image": "/assets/equipments/eqp5.jpg",
+      "model": "E151617",
+      "description": "Innovative devices for experiments."
+    }
+  ]
+  

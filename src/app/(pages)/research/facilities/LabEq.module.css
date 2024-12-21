@@ -1,17 +1,27 @@
-.lab-eq{
+.lab-eq {
     width: 90%;
     background-color: #fff;
     margin: 4vh auto;
 }
-
-.grid-facilities{
+.lab-eq h2{
+    padding: 40px 10px;
+}
+.grid-facilities {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    justify-items: center;
+}
+
+.grid-facilities>div {
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 @media only screen and (max-width: 768px) {
-    .grid-facilities{
+    .grid-facilities {
         grid-template-columns: repeat(1, 1fr);
     }
 }

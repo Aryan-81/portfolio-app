@@ -6,8 +6,10 @@
     box-shadow: 0 5px 10px #00000072;
     background-color: #ffffff;
     border-radius: 0.5em;
-    max-width: 100%;
+    max-width: 300px;
+    max-height: 500px;
     padding: 2% 3% 1% 3%;
+    /* margin: 0 auto; */
     overflow: hidden;
 }
 .eq-card:hover{
@@ -17,26 +19,20 @@
 .img-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 4/3;
+    flex: 1;
     overflow: hidden;
 
 }
-.img-container > .pic {
-    position: absolute;
-    left: 0;
-    right:0;
-    top: 0;
-    height: 100%;
+.pic {
     width: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: auto;
 }
 .img-info{
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 45%;
     width: 100%;
     height: fit-content;
     margin: 0 auto;
@@ -65,9 +61,9 @@
     padding-inline: 0;
     border-width: 0;
     width: 100%;
-    height: 2em;
+    height: 3em;
     margin: 0;
-    padding: 0;
+    padding: 10px ;
     background-color: #ffffff00;
 }
 
@@ -104,9 +100,10 @@
 .eq-info{
     padding: 0 2%;
 }
-.eq-card:hover .img-info{
-    transform: translate(0%,80%) scale(0.9);
+.eq-card:hover .img-info {
+    transform: translate(0%, calc(100% - 2.5rem)) scale(0.9);
 }
+
 .eq-card:hover .info-icon{
     transform: scale(1);
 }
@@ -114,5 +111,6 @@
     transform: scale(0) !important;
 }
 .img-info.active{
+    border-radius: 0 !important;
     transform: none !important;
 }

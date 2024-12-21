@@ -1,0 +1,33 @@
+[
+    {
+        "imgLink": "/assets/collab/IITB.png",
+        "name": "IIT Bombay"
+    },
+    {
+        "imgLink": "/assets/collab/ICTM.jpg",
+        "name": "ICTM"
+    },
+    {
+        "imgLink": "/assets/collab/IIIM.jpg",
+        "name": "IIIM"
+    },
+    {
+        "imgLink": "/assets/collab/NTU.png"
+    },
+    {
+        "imgLink": "/assets/collab/NIT_Jalandhar.png",
+        "name": "NIT Jalandhar"
+    },
+    {
+        "imgLink": "/assets/collab/CPCB.jpg",
+        "name": "CPCB"
+    },
+    {
+        "imgLink": "/assets/collab/TUHH.png",
+        "name": "TUHH"
+    },
+    {
+        "imgLink": "/assets/collab/DST.jpg",
+        "name": "DST"
+    }
+]
