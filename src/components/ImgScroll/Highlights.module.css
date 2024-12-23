@@ -1,26 +1,39 @@
-.highligts ::-webkit-scrollbar {
-    display: none;
-}
+/* Inspired by this pen by Pieter Biesemans https://codepen.io/pieter-biesemans/pen/BQBWXX and My Mother Before Me project http://mymotherbeforeme.com/ */
 
-.highligts ::-webkit-scrollbar-button {
-    display: none;
-}
-
-.highligts {
-    overflow: hidden;
+.highlights {
+    font-family: Hepta Slab, sans-serif;
     font-weight: 500;
     background: #efecdb;
-    font-family: Hepta Slab, sans-serif;
     color: #5D4037;
-    height: 65vh;
+    box-sizing: border-box;
+}
+.highlights h2{
+    padding: .8rem 2vw;
+}
+
+.horizontalScrollWrapper {
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+    scrollbar-width: none;
+    /* For Firefox */
+}
+
+.horizontalScrollWrapper::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
+
+.external {
+    overflow: hidden;
+    height: 50vh;
 }
 
 .horizontalScrollWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 56vh;
-    transform: rotate(-90deg) translate3d(0, -56vh, 0);
+    width: 50vh;
+    transform: rotate(-90deg) translate3d(0, -50vh, 0);
     transform-origin: right top;
     overflow-y: auto;
     overflow-x: hidden;
@@ -42,12 +55,12 @@
     transition: 1s;
 }
 
-.imgWrapperr:hover {
+.imgWrapper:hover {
     min-height: 65vh;
 }
 
-.slower0 {
-    transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+.slower {
+    transform: rotate(90deg) translateZ(-.2px) scale(.9) translateX(0%) translateY(-10vh);
 }
 
 .slower1 {
@@ -58,19 +71,19 @@
     transform: rotate(90deg) translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
 }
 
-.slower3 {
+.slower-down {
     transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh);
 }
 
-.faster0 {
-    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh);
+.faster {
+    transform: rotate(90deg) translateZ(.15px) scale(0.7) translateX(0%) translateY(10vh);
 }
 
 .faster1 {
     transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh);
 }
 
-.faster2 {
+.fastest {
     transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh);
 }
 
@@ -82,29 +95,16 @@
     transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh);
 }
 
-.highligts .scroll-info,
-.highligts header {
-    position: absolute;
-    left: 1rem;
-}
 
-
-.highligts header {
-    bottom: 1rem;
-}
-
-.highligts .scroll-info {
-    top: 1rem;
-}
-
-.highligts a {
+.highlights a {
     color: inherit;
     font-weight: 500;
 
 }
 
-.highligts h2 {
-    padding-left: 5%;
+.highlights h1 {
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 .imgWrapper a {
@@ -115,24 +115,24 @@
     box-shadow: 0 10px 50px #5f2f1182;
 }
 
-.highligts img {
+.highlights img {
     max-width: 45vh;
-    max-height: 50vh;
+    max-height: 40vh;
     transition: .5s;
     vertical-align: top;
-    /* filter: saturate(40%) sepia(30%) hue-rotate(5deg); */
+    filter: saturate(40%) sepia(30%) hue-rotate(5deg);
 }
 
-.highligts a:hover img {
+.highlights a:hover img {
     filter: none;
 }
 
-.highligts .scroll-info {
+.scroll-info {
     display: flex;
     align-items: center;
 }
 
-.highligts.icon svg {
+.icon svg {
     width: 50px;
     fill: currentcolor;
 }

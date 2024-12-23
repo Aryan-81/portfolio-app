@@ -5,14 +5,27 @@
     margin: 5vh auto;
 }
 .container > h2{
+    
+
     text-align: center;
-    margin: 2vh auto;
+    margin: 1vh auto;
     padding-top: 30px;
     padding-bottom: 15px;
     color: black;
     text-shadow: 0 5px 10px rgba(0,0,0,.2);
     font-size: 50px;
+
+
     
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    justify-items: center;
 }
 .description ul {
     list-style-type: none;

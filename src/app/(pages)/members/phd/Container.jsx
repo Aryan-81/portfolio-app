@@ -12,9 +12,9 @@ function Container() {
 
   return (
     <div className={styles['container']}>
-      <h2>M.Tech</h2>
+      <h2>Phd</h2>
       <div className={styles['box-container']}>
-        {cardComponents}
+        {cardComponents} 
       </div>
     </div>
   );

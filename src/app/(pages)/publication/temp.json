@@ -1,0 +1,111 @@
+{
+    "scientific_publications": [
+      {
+        "authors": "Ch M. S. Kumar, S. Singh, M. K. Gupta, Y. M Nimdeo, R. Raushan, A. V. Deorankar, TM A. Kumar, P. K. Rout, C. S. Chanotiya, V. D Pakhale, A. D. Nannaware",
+        "title": "Solar energy: A promising renewable source for meeting energy demand in Indian agriculture applications",
+        "journal": "Sustain. Energy Technol. Assess.",
+        "volume": 55,
+        "pages": "102905",
+        "year": 2023,
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S2213138822009535"
+      },
+      {
+        "authors": "A. Patil and Y. M. Nimdeo",
+        "title": "Microfluidic Technology for Advanced Drug Delivery Systems",
+        "type": "Book Chapter 27",
+        "pages": "228-257",
+        "year": 2023,
+        "book": "Advances in MEMS and Microfluidic Systems",
+        "publisher": "IGI Global",
+        "doi": "https://doi.org/10.4018/978-1-6684-6952-1.ch012"
+      },
+      {
+        "authors": "A. Nannaware, Ch M, S. Kumar, S. Srivastava, S. Singh, M. K. Gupta, P. K. Rout, C.S. Chanotiya, R.K. Lal, Y. M. Nimdeo, S. Roy",
+        "title": "Eco-friendly solar distillation apparatus for improving the yield of essential oils with enhancing organoleptic characteristics",
+        "journal": "Renewable Energy",
+        "volume": 191,
+        "pages": "345 - 356",
+        "year": 2022,
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0960148122004372"
+      },
+      {
+        "authors": "P. Mandade and Y. M. Nimdeo",
+        "title": "Techno-economic assessment of biofuel production using thermochemical pathways",
+        "type": "Book Chapter 27",
+        "pages": "1-19",
+        "year": 2022,
+        "book": "Biofuels and Bioenergy",
+        "doi": "10.1016/B978-0-323-90040-9.00029-1"
+      },
+      {
+        "authors": "Y. M. Nimdeo, A. Srivastava",
+        "title": "Soret separation of species in a salt solution under varying transient thermal field: an interferometric study through sensitivity analysis",
+        "journal": "Exp. Heat Transf.",
+        "volume": 34,
+        "pages": "251-268",
+        "year": 2020,
+        "link": "https://www.tandfonline.com/doi/abs/10.1080/08916152.2020.1743384"
+      },
+      {
+        "authors": "Y. M. Nimdeo, A. Srivastava",
+        "title": "Understanding the temperature dependence of thermo-physical properties of nanofluid suspensions using non-intrusive dynamic measurements",
+        "journal": "Exp. Therm Fluid Sci.",
+        "volume": 94,
+        "pages": "109",
+        "year": 2018,
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0894177718300463"
+      },
+      {
+        "authors": "S. Chanda, K. Muralidhar, Y. M. Nimdeo",
+        "title": "Joint estimation of thermal and mass diffusivities of a solute solvent system using ANN-GA based inverse framework",
+        "journal": "Int. J. Them Sci.",
+        "volume": 123,
+        "pages": "27-41",
+        "year": 2018,
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0009250917300829"
+      },
+      {
+        "authors": "Y. M. Nimdeo, Y. M. Joshi, K. Muralidhar",
+        "title": "Measurement of mass diffusivity by light streak imaging",
+        "journal": "Chem.Eng.Res.Des.",
+        "volume": 102,
+        "pages": "207-215",
+        "year": 2015,
+        "link": "http://home.iitk.ac.in/~joshi/ChERD2015.pdf"
+      },
+      {
+        "authors": "Y. M. Nimdeo, Y. M. Joshi, K. Muralidhar",
+        "title": "Measurement of Mass Diffusivity Using Interferometry through Sensitivity Analysis",
+        "journal": "Ind. Eng. Chem. Res.",
+        "volume": 53,
+        "issue": 49,
+        "pages": "19338-19350",
+        "year": 2014,
+        "link": "https://www.researchgate.net/publication/272794735_Measurement_of_Mass_Diffusivity_Using_Interferometry_through_Sensitivity_Analysis"
+      },
+      {
+        "authors": "Y. M. Nimdeo, S. S. Bhandari, Y. M Joshi, K. Muralidhar",
+        "title": "Heat transfer studies in the soft glassy suspension of Laponite RD using optical interferometry",
+        "journal": "CompFlu-2012",
+        "year": 2012,
+        "link": null
+      }
+    ],
+    "conference_and_workshops": [
+      {
+        "authors": "A. Patil and Y. Nimdeo",
+        "title": "Formulation of Food Grade Pickering Emulsion Stabilized using Chitosan Particles",
+        "conference": "Indian Institute of Chemical Engineer-CHEMCON",
+        "date": "December 27 – 30, 2023",
+        "location": "Kolkata"
+      },
+      {
+        "authors": "A. Patil and Y. Nimdeo",
+        "title": "Formulation of Sunflower Oil in Water Pickering Emulsion using Chitosan as Stabilizers",
+        "conference": "ACS SPRING",
+        "date": "March 17-21, 2024",
+        "location": "New Orleans, LA & Hybrid"
+      }
+    ]
+  }
+  

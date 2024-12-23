@@ -1,10 +1,11 @@
 {
     "name": "Dr. Yogesh Madhukarrao Nimdeo",
     "occupation":"Assistant Professor",
-    "currentPosition":"HOD of Chemical Engineering Department",
+    "currentPosition":"Chemical Engineering Department",
     "at":"At IIT Jammu",
     "email":"yogesh.nimdeo@iitjammu.ac.in",
     "Telephone": "123321123",
+    "Laboratory":"Diffusion dynamics and process intensification Laboratory",
     "quote": "Like a master chef in the kitchen of molecules, chemical engineers concoct recipes for progress, blending elements with precision to create a world of infinite possibilities.",
     "message": {
       "title": "Message",

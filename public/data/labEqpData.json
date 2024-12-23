@@ -28,6 +28,12 @@
       "image": "/assets/equipments/eqp5.jpg",
       "model": "E151617",
       "description": "Innovative devices for experiments."
+    },
+    {
+      "name": "ep5",
+      "image": "/assets/equipments/eqp5.jpg",
+      "model": "E151617",
+      "description": "Innovative devices for experiments."
     }
   ]
   

@@ -24,6 +24,9 @@ function Header(){
           <div className={styles['line']}></div>
           <h3>TELEPHONE No. :</h3>
           <h4>{data.Telephone}</h4>
+          <div className={styles['line']}></div>
+          <h3>LABORATORY :</h3>
+          <h4>{data.Laboratory}</h4>
           </div>
         </div>
       </div>

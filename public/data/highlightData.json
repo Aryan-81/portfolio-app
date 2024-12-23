@@ -1,0 +1,68 @@
+[
+    {
+      "href": "",
+      "src": "/assets/highlights/01.JPG",
+      "alt": "Parisian cafe terrace",
+      "className": ["slower"]
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/02.JPG",
+      "alt": "Retro boy doll",
+      "className": ["faster"]
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/03.JPG",
+      "alt": "Clocks shop window",
+      "className": ["slower","vertical"]
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/04.JPG",
+      "alt": "Swans and ducks in a river",
+      "className":[ "slower", "slowerDown"]
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/05.JPG",
+      "alt": "Sidewalk cafe",
+      "className": []
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/06.JPG",
+      "alt": "Paris waterfront",
+      "className": ["slower"]
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/07.JPG",
+      "alt": "Old man by the river",
+      "className": ["faster1"]
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/08.JPG",
+      "alt": "Cafe terrace",
+      "className": ["slower" ,"slower2"]
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/09.JPG",
+      "alt": "Street scene",
+      "className": []
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/01.JPG",
+      "alt": "Notre Dame river boat",
+      "className": ["slower"]
+    },
+    {
+      "href": "",
+      "src": "/assets/highlights/01.JPG",
+      "alt": "Skulls in shop window",
+      "className": ["slower", "last"]
+    }
+  ]

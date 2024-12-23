@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './ContactForm.module.css';
+import data from '/public/data/homeData.json';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -38,7 +39,7 @@ const ContactForm = () => {
               </li>
               <li>
                 <span><img src='/assets/mail.png' alt="mail" /></span>
-                <span>llaryanllrajll@gamil.com</span>
+                <span>{data.email}</span>
               </li>
               
             </ul>

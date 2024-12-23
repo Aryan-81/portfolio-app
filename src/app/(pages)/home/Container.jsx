@@ -15,12 +15,12 @@ function Container() {
             <li key={index}>{interest}</li>
           ))}
         </ul>
-        <h2>Honors and Achievements:</h2>
+        {/* <h2>Honors and Achievements:</h2>
         <ul>
           {data.honorsAndAchievements.map((achievement, index) => (
             <li key={index}>{achievement}</li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
