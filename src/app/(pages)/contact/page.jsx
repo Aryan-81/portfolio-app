@@ -106,7 +106,7 @@ const ContactForm = () => {
                   name="mobileNumber"
                   value={formData.mobileNumber}
                   onChange={handleChange}
-                  required
+                  
                 />
                 <span>Mobile Number</span>
               </div>

@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import CollabCard from '@/components/CollabCard';
 import data from '/public/data/collaborationData'
 
-const bkHeaderimg = '/assets/collab/colab.webp';
+const bkHeaderimg = '/collab/colab.webp';
 
 function About() {
     return (

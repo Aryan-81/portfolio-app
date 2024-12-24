@@ -1,7 +1,7 @@
 import styles from './Details.module.css';
 import data from '/public/data/aboutData.json';
 
-function Details() {
+export default function Details() {
   return (
     <div className={styles['details']}>
       {data.sections.map((section, index) => (
@@ -30,5 +30,3 @@ function Details() {
     </div>
   );
 }
-
-export default Details;
