@@ -1,12 +1,13 @@
-
+import React from "react";
 import Container from "./Container";
 
-function PhD(){
+function PG(){
     return(
         <>
+        <br></br>
         <Container />
         </>
     )
 }
 
-export default PhD;
+export default PG;

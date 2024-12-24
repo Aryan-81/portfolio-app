@@ -1,10 +1,9 @@
-
 import styles from './ScrollContainer.module.css'; // Import CSS module
-
-function ScrollContainer({text='Some Text On Latest Update.'}) {
+import data from '/public/data/newsData.json'
+function ScrollContainer() {
   return (
     <div className={styles.scrollContainer}>
-      <div id="scroll-text" className={styles.scrollText}>{text}</div>
+      <div id="scroll-text" className={styles.scrollText}>{data.latest_news}</div>
     </div>
   );
 };

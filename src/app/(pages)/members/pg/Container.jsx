@@ -1,17 +1,16 @@
-
 import Card from './Card';
 import styles from './Container.module.css'; 
+import datas from "public/data/PhdData.json";
 
 function Container() {
-  const Names = ['person_1', 'person_2', 'person_3','person_4','person_5','person_6'];
-
-  const cardComponents = Names.map((Name, index) => (
-    <Card key={index} Name={Name} />
+  const cardComponents = datas.map((data, index) => (
+    <Card key={index} Name={data.name} CardImg={data.src} duration={data.duration} research={data.research} />
   ));
+  
 
   return (
     <div className={styles['container']}>
-      <h2>M.Tech</h2>
+      <h2>PG</h2>
       <div className={styles['box-container']}>
         {cardComponents}
       </div>

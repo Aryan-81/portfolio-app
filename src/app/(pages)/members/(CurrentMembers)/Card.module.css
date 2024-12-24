@@ -2,10 +2,12 @@
 
 .box{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    max-width: 350px ;
     border-radius: 5px;
     background: #fff;
     text-align: center;
     padding:30px 20px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .box img{

@@ -1,20 +1,18 @@
-
 import Card from './Card';
 import styles from './Container.module.css'; 
+import datas from "public/data/PGData.json";
 
 function Container() {
-  const Names = ['person_1', 'person_2', 'person_3','person_4','person_5','person_6'];
-
-  const cardComponents = Names.map((Name, index) => (
-    <Card key={index} Name={Name} />
+  const cardComponents = datas.map((data, index) => (
+    <Card key={index} Name={data.name} CardImg={data.src} duration={data.duration} project={data.project} />
   ));
-  console.log(cardComponents);
+  
 
   return (
     <div className={styles['container']}>
       <h2>Phd</h2>
       <div className={styles['box-container']}>
-        {cardComponents} 
+        {cardComponents}
       </div>
     </div>
   );

@@ -29,7 +29,7 @@
 .container > h2{
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 60px;
     color: black;
     text-shadow: 0 5px 10px rgba(0,0,0,.2);
     font-size: 50px;
@@ -40,7 +40,7 @@
 .container .box-container{
     padding: 0 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 0.33fr));  
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.33fr));  
     gap:15px;
     position: relative;
     justify-content: space-around;

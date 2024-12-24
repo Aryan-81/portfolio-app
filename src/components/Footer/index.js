@@ -1,9 +1,9 @@
 import styles from './Footer.module.css';
-
+import data from '/public/data/homeData.json';
 
 const clg_logo = '/assets/1709208978519.jpeg';
 const X_logo = '/assets/x.svg';
-const insta_logo = '/assets/instagram.svg';
+const gScholar = '/assets/gscholar.png';
 const Gmail_logo = '/assets/gmail.svg';
 const linkin_logo = '/assets/linkedin.svg';
 
@@ -39,9 +39,9 @@ function Footer() {
         <div className={styles['b']}></div>
         <div className={styles["logos"]}>
           <a href="#"><img className={styles['X']} src={X_logo} width="25px" alt="X_Icon" /></a>
-          <a href="#"><img className={styles['insta']} src={insta_logo} width="25px" alt="Instagram Icon" /></a>
-          <a href="linkedin.com/in/dr-yogesh-nimdeo-06485b10"><img className={styles['linkedin']} src={linkin_logo} width="25px" alt="LinkedIn Icon" /></a>
-          <a href="mailto:yogesh.nimdeo@iitjammu.ac.in"><img className={styles['gmail']} src={Gmail_logo} width="25px" alt="Gmail Icon" /></a>
+          <a href="#"><img className={styles['insta']} src={gScholar} width="25px" alt="Instagram Icon" /></a>
+          <a href={data.linkedin}><img className={styles['linkedin']} src={linkin_logo} width="25px" alt="LinkedIn Icon" /></a>
+          <a href={`mailto:${data.email}`}><img className={styles['gmail']} src={Gmail_logo} width="25px" alt="Gmail Icon" /></a>
         </div>
       </div>
     </footer>

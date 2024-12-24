@@ -11,7 +11,7 @@ function Card({Name='Name',CardImg= PlaceholderImg ,Descrip=Lorem}){
       <img src={CardImg} alt="profile_img"></img>
       <h3>{Name}</h3>
       <p>{Descrip}</p>
-      <a href="#" className = {styles['btn']}>read more</a>
+      {/* <a href="#" className = {styles['btn']}>read more</a> */}
     </div>
     )
 }

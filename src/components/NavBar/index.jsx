@@ -1,51 +1,75 @@
 'use client';
-import { useEffect, useState } from "react";
+
+import { useEffect, useState, useRef } from "react";
 import styles from './NavBar.module.css';
 import './hamburger.css';
 import Link from 'next/link';
-const nav_logo = '/assets/Indian_Institute_of_Technology__Jammu_Logo.svg' ;
 
+const nav_logo = '/assets/Indian_Institute_of_Technology__Jammu_Logo.svg';
 
 export default function Nav_bar() {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [navTop, setNavTop] = useState("0");
-  const navbarHeight = 100;
-  const scrollThreshold = 50;
+  const navTop = 0;
+  const [activeLink, setActiveLink] = useState(null);
+  const [indicatorStyle, setIndicatorStyle] = useState({});
+  const navRef = useRef(null);
+  const indicRef = useRef(null);
+
+  const handleNavClick = (e, link) => {
+    setActiveLink(link);
+    const linkRect = e.target.getBoundingClientRect();
+    const navRect = navRef.current.getBoundingClientRect();
+    const indicRect = indicRef.current.getBoundingClientRect();
+
+    setIndicatorStyle({
+      left: linkRect.left + linkRect.width/2  - navRect.left - (indicRect.width/2) ,
+    });
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+    if (!activeLink) return;
 
-      if (Math.abs(prevScrollPos - currentScrollPos) > scrollThreshold) {
-        if (currentScrollPos > prevScrollPos) {
-          // Scrolling down
-          setNavTop(`-${navbarHeight}px`);
-        } else {
-          // Scrolling up
-          setNavTop("0");
-        }
-        setPrevScrollPos(currentScrollPos);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
+    // Initial placement for the first load
+    const activeElement = document.querySelector(`.${styles['active']}`);
+    if (activeElement) {
+      const linkRect = activeElement.getBoundingClientRect();
+      const navRect = navRef.current.getBoundingClientRect();
+      const indicRect = indicRef.current.getBoundingClientRect();
+      setIndicatorStyle({
+        left: linkRect.left + linkRect.width/2 - navRect.left - (indicRect.width/2),
+      });
+    }
+  }, [activeLink]);
 
   return (
-    <nav className={styles['nav']} style={{ top: navTop }}>
+    <nav className={styles['nav']} style={{ top: navTop }} >
       <div className={styles['logo']} style={{ backgroundImage: `url('${nav_logo}')` }}>
         <Link href="/"></Link>
       </div>
-      <div id="nav-menu" className={styles['nav-menu']}>
-        <div className={styles['obj']}><Link href="/">Home</Link></div>
-        <div className={styles['obj']}><Link href="/about">About</Link></div>
-        <div className={styles['obj']}><Link href="/activities">Activities</Link></div>
-        <div className={`${styles['obj']} ${styles['drop']}`}>
-          <Link href="/research">Research
+      <div id="nav-menu" className={styles['nav-menu']} ref={navRef} >
+        <div
+          className={`${styles['obj']} ${activeLink === 'Home' ? styles['active'] : ''}`}
+          onClick={(e) => handleNavClick(e, 'Home')}
+        >
+          <Link href="/">Home</Link>
+        </div>
+        <div
+          className={`${styles['obj']} ${activeLink === 'About' ? styles['active'] : ''}`}
+          onClick={(e) => handleNavClick(e, 'About')}
+        >
+          <Link href="/about">About</Link>
+        </div>
+        <div
+          className={`${styles['obj']} ${activeLink === 'Activities' ? styles['active'] : ''}`}
+          onClick={(e) => handleNavClick(e, 'Activities')}
+        >
+          <Link href="/activities">Activities</Link>
+        </div>
+        <div
+          className={`${styles['obj']} ${styles['drop']} ${activeLink === 'Research' ? styles['active'] : ''}`}
+          onClick={(e) => handleNavClick(e, 'Research')}
+        >
+          <Link href="/research">
+            Research
             <div>
               <div className={styles['arrow']}></div>
             </div>
@@ -55,8 +79,12 @@ export default function Nav_bar() {
             <li><Link href="/research/facilities">Facilities</Link></li>
           </ul>
         </div>
-        <div className={`${styles['obj']} ${styles['drop']}`}>
-          <Link href="/members">Members
+        <div
+          className={`${styles['obj']} ${styles['drop']} ${activeLink === 'Members' ? styles['active'] : ''}`}
+          onClick={(e) => handleNavClick(e, 'Members')}
+        >
+          <Link href="/members">
+            Members
             <div>
               <div className={styles['arrow']}></div>
             </div>
@@ -68,10 +96,25 @@ export default function Nav_bar() {
             <li><Link href="/members/intern">Intern</Link></li>
           </ul>
         </div>
-        <div className={styles['obj']}><Link href="/news">News</Link></div>
-        <div className={styles['obj']}><Link href="/publication">Publications</Link></div>
-        <div className={styles['obj']}><Link href="/contact">Contact</Link></div>
-        <div className={styles['indic']}></div>
+        <div
+          className={`${styles['obj']} ${activeLink === 'News' ? styles['active'] : ''}`}
+          onClick={(e) => handleNavClick(e, 'News')}
+        >
+          <Link href="/news">News</Link>
+        </div>
+        <div
+          className={`${styles['obj']} ${activeLink === 'Publications' ? styles['active'] : ''}`}
+          onClick={(e) => handleNavClick(e, 'Publications')}
+        >
+          <Link href="/publication">Publications</Link>
+        </div>
+        <div
+          className={`${styles['obj']} ${activeLink === 'Contact' ? styles['active'] : ''}`}
+          onClick={(e) => handleNavClick(e, 'Contact')}
+        >
+          <Link href="/contact">Contact</Link>
+        </div>
+        <div ref={indicRef} className={styles['indic']} style={indicatorStyle}></div>
       </div>
       <button className="hamburger hamburger--elastic" id="hamburgerButton" type="button">
         <span className="hamburger-box">

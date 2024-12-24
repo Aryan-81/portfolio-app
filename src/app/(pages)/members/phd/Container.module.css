@@ -1,53 +1,54 @@
-
-
-.container{
-    width: 80%;
-    margin: 5vh auto;
+/* .heading-box {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #000;
 }
-.container > h2{
-    
+  
+.heading-box h2 {
+    position: relative;
+}
+  
+.heading-box h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+.description
+{
+    padding: 30px;
+} */
+.container{
+    padding-bottom: 100px;
+    position: relative;
+}
 
+.container > h2{
     text-align: center;
-    margin: 1vh auto;
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 60px;
     color: black;
     text-shadow: 0 5px 10px rgba(0,0,0,.2);
     font-size: 50px;
-
-
     
 }
-.box-container{
+
+
+.container .box-container{
+    padding: 0 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    justify-items: center;
-}
-.description ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 1%;
-    margin-left: 2% ;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.33fr));  
+    gap:15px;
+    position: relative;
+    justify-content: space-around;
 }
 
-.description ul li { 
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.2em;
-    padding-left: 1em;
-    text-indent: -1em;
-}
 
-.description ul li::before {
-    content: '• ';
-    color: black;
-    padding-right: 0.5em;
-}
-.description ul:nth-child(even) {
-    background-color: #e5eef3d7;
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
 }
