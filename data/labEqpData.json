@@ -1,0 +1,99 @@
+[
+    {
+      "name": "High-speed homogenizer",
+      "image": "/equipments/Picture2.png",
+      "model": "IKA Dispersers, T 25 digital ULTRA-TURRAX",
+      "description": "High-performance dispersing instrument for volumes from 1 – 2000 ml (H2O) with digital speed display. It offers a wide speed range from 3000 – 25,000 rpm"
+    },
+    {
+      "name": "Overhead-Stirrer",
+      "image": "/equipments/Picture3.png",
+      "model": "DAN 6050.DNEU.01",
+      "description": "An overhead stirrer is a device used for homogenizing, mixing, suspending, and recirculating high-viscosity substances or large volumes. Its speed ranges from 50 to 3000 RPM."
+    },
+    {
+      "name": "Ultrasonic probe sonicator (Homogenizer)",
+      "image": "/equipments/Picture4.jpg",
+      "model": "Stericox DH92-IIDN",
+      "description": "Ultrasonic probe sonicator uses high-frequency sound waves to disrupt or homogenize biological samples, chemicals, and other materials."
+    },
+    {
+      "name": "pH meter",
+      "image": "/equipments/Picture5.jpg",
+      "model": "Labman India LMMP-30",
+      "description": "The pH meter measures the difference in electrical potential between a pH electrode and a reference electrode. The pH scale ranges from 0 to 14, with 7 being neutral, less than 7 being acidic, and greater than 7 being basic."
+    },
+    {
+      "name": "Analytical weighing balance",
+      "image": "/equipments/Picture6.jpg",
+      "model": "METTLER TOLEDO ME-204",
+      "description": "Weighing balance with accurate, reliable results and smart design features. 220 g capacity; 0.1 mg readability."
+    },
+    {
+      "name": "Ultrasonic cleaner",
+      "image": "/equipments/Picture7.jpg",
+      "model": "Labman India ultrasonic cleaner",
+      "description": "An ultrasonic cleaner uses sound waves to remove contaminants from surfaces, especially in hard-to-reach areas. Ultrasonic cleaners create microscopic implosions in a liquid to remove contaminants"
+    },
+    {
+      "name": "Mini centrifuge",
+      "image": "/equipments/Picture8.png",
+      "model": "Remi RM 03 Plus",
+      "description": "Rotor Capacity: 12 place closed rotor with metal safety lid; Maximum Speed RPM / RCF (g): 15000 rpm / 15596 g."
+    },
+    {
+      "name": "Hot air oven",
+      "image": "/equipments/Picture9.png",
+      "model": "Equitron 7051-091",
+      "description": "Rotor EQUITRON Forced Convection Oven is ideally suitable for any laboratory application requiring a controlled temperature environment upto 250ºC."
+    },
+    {
+      "name": "Vacuum oven",
+      "image": "/equipments/Picture10.png",
+      "model": "Ants Electric Vacuum Oven",
+      "description": "A vacuum oven, or vacuum drying oven, is primarily used to expedite the drying process by employing vacuum and heat. As the pressure decreases, the boiling point of the solvent also decreases, allowing the vacuum oven to remove moisture and volatile substances at lower temperatures."
+    },
+    {
+      "name": "Rheometer",
+      "image": "/equipments/Picture11.jpg",
+      "model": "Anton-Paar MCR 702e",
+      "description": "A rheometer measures how a material or fluid responds to applied force. It's used to study the rheology of fluids and soft solids and to gain insights into their flow and deformation behavior."
+    },
+    {
+      "name": "Hydrodynamic cavitation setup for water treatment",
+      "image": "/equipments/Picture12.jpg",
+      "model": "AdiChem Cavitation Setup",
+      "description": "HC is a promising technology for treating industrial effluents because it is cost-effective, energy-efficient, and can be operated on a large scale.Available flow meter: Venturi meter, Orifice meter, and Vortex-flow meter."
+    },
+    {
+      "name": "High-pressure reactor",
+      "image": "/equipments/Picture13.jpg",
+      "model": "AdiChem high pressure reactor",
+      "description": ":  A high-pressure reactor is a specialized vessel designed to conduct chemical reactions under elevated pressures and, often, high temperatures."
+    },
+    {
+      "name": "Hot plate magnetic stirrer",
+      "image": "/equipments/Picture14.jpg",
+      "model": "IKA C Mag HS 7 and Dan 500.DNDG.01",
+      "description": "A device widely used in laboratories and consists of a rotating magnet or a stationary electromagnet that creates a rotating magnetic field. This device is used to make a stir bar, immerse in a liquid, quickly spin, or stir or mix a solution."
+    },
+    {
+      "name": "Upright optical microscope",
+      "image": "/equipments/Picture15.jpg",
+      "model": "Olympus BX51 upright microscope",
+      "description": "Olympus upright microscopes offer high-quality imaging for life science and clinical research. With world-class Olympus microscope optics, you can expect high-resolution, high-contrast microscopy imagery for viewing, insight, and analysis.Available objectives options: 10X, 20X, 40X, and 100X"
+    },
+    {
+      "name": "Heating stage",
+      "image": "/equipments/Picture16.jpg",
+      "model": "Radiant RHX -40 to 125 Hot Stage",
+      "description": "Thermoelectrically cooled device to provide temperature control. easy setup device to quickly start the experiment. Allows observation from zero to 1250 C. and below using cool water circulation. The system provides rapid sample loading and positioning.Temperature range: -40 to 1250 C"
+    },
+    {
+      "name": "UV-vis spectroscopy",
+      "image": "/equipments/Picture17.jpg",
+      "model": "Agilent Cary 3500 Compact UV-Vis Spectrophotometer",
+      "description": "The Cary 3500 Compact UV-Vis is a double beam spectrophotometer featuring new and unique measurement capabilities that can be deployed in regulated environments. The system performs ambient and temperature-controlled experiments with air-cooled Peltier temperature control, and it accurately analyzes low-volume samples—providing in-depth analysis by collecting up to 250 data points per second.Temperature range: -5 to 1100 C"
+    }
+  ]
+  
