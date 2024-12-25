@@ -25,19 +25,22 @@ function Card({ EqpName = 'Equipment Name', EqpImg = PlaceholderImg, Model = 'w2
   return (
     <div className={styles['eq-card']}>
       <div className={styles['img-container']}>
-        <img src={`${EqpImg}`}  className={styles['pic']}></img>
+        <img src={`${EqpImg}`} className={styles['pic']}></img>
         <div className={styles['img-info']}>
           <button className={styles['show-info']} onClick={toggleImgInfo}>
             <div className={styles['arrow']}></div>
           </button>
-          <div className={`${styles['eq-name']} ${styles['eq-info']}`}>
-            <h4>Model :</h4>
-            <p>{Model}</p>
+          <div className={styles.infa}>
+            <div className={`${styles['eq-name']} ${styles['eq-info']}`}>
+              <h4>Model :</h4>
+              <p>{Model}</p>
+            </div>
+            <div className={`${styles['eq-discription']} ${styles['eq-info']}`}>
+              <h4>Description :</h4>
+              <p>{Descrip}</p>
+            </div>
           </div>
-          <div className={`${styles['eq-discription']} ${styles['eq-info']}`}>
-            <h4>Description :</h4>
-            <p>{Descrip}</p>
-          </div>
+
         </div>
         <div
           className={styles['info-icon']}

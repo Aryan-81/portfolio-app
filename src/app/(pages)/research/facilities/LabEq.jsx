@@ -3,8 +3,6 @@ import styles from './LabEq.module.css'; // Import your CSS module
 import datas from '/public/data/labEqpData.json'
 
 function LabEq() {
-  const equipmentNames = ['ep1', 'ep2', 'ep3', 'ep4', 'ep5'];
-
   return (
     <div className={styles['lab-eq']}>
       <h2>Lab Equipments</h2>
