@@ -50,7 +50,7 @@ export default function Nav_bar() {
           className={`${styles['obj']} ${activeLink === 'Home' ? styles['active'] : ''}`}
           onClick={(e) => handleNavClick(e, 'Home')}
         >
-          <Link href="/">Home</Link>
+          <Link href="/home">Home</Link>
         </div>
         <div
           className={`${styles['obj']} ${activeLink === 'About' ? styles['active'] : ''}`}

@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
 import styles from './GalleryLayout.module.css';
-
+import Image from "next/image";
 function openGallery(id) {
   closeAll();
   const gallery = document.getElementById('gallery-' + id);
@@ -67,7 +67,7 @@ const Gallery = () => {
                   className={styles['Card-image']}
                   style={{ backgroundImage: `url(${images[0]})` }}
                 >
-                  <img src={images[0]} alt="" />
+                  <Image src={images[0]} width={25} height={0} alt="img" />
                 </div>
               </div>
               <div className={styles['Card-title']}>
@@ -86,7 +86,7 @@ const Gallery = () => {
                 <div className={styles['Gallery-images']}>
                   {images.map((image, k) => (
                     <div key={k} className={styles['Gallery-image']}>
-                      <img key={`${folderName}-${image}-${k}`} src={image} alt="img" />
+                      <Image key={`${folderName}-${image}-${k}`} src={image} height={10} width={10} alt="img" />
                     </div>
                   ))}
                 </div>

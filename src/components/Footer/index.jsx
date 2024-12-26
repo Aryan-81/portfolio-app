@@ -1,5 +1,6 @@
 import styles from './Footer.module.css';
 import data from '/public/data/homeData.json';
+import Image from 'next/image';
 
 const clg_logo = '/assets/1709208978519.jpeg';
 const X_logo = '/assets/x.svg';
@@ -12,7 +13,7 @@ function Footer() {
   return (
     <footer className={styles['footer']}>
       <div className={styles['ftr-ctr1']}>
-        <img className={styles['logo']} src={clg_logo} width="200px" alt="IIT Jammu Logo" />
+        <Image className={styles['logo']} src={clg_logo} layout="intrinsic" width={300} height={0} alt="IIT Jammu Logo" />
         <div>
           <span className={styles['college_name']}>Indian Institute of Technology Jammu</span>
         </div>
@@ -38,10 +39,10 @@ function Footer() {
         </div>
         <div className={styles['b']}></div>
         <div className={styles["logos"]}>
-          <a href="#"><img className={styles['X']} src={X_logo} width="25px" alt="X_Icon" /></a>
-          <a href="#"><img className={styles['insta']} src={gScholar} width="25px" alt="Instagram Icon" /></a>
-          <a href={data.linkedin}><img className={styles['linkedin']} src={linkin_logo} width="25px" alt="LinkedIn Icon" /></a>
-          <a href={`mailto:${data.email}`}><img className={styles['gmail']} src={Gmail_logo} width="25px" alt="Gmail Icon" /></a>
+          <a href="#"><Image className={styles['X']} src={X_logo} layout="intrinsic" width={25} height={0} alt="X_Icon" /></a>
+          <a href="#"><Image className={styles['insta']} src={gScholar} layout="intrinsic" width={25} height={0} alt="Instagram Icon" /></a>
+          <a href={data.linkedin}><Image className={styles['linkedin']} src={linkin_logo} layout="intrinsic" width={25} height={0} alt="LinkedIn Icon" /></a>
+          <a href={`mailto:${data.email}`}><Image className={styles['gmail']} src={Gmail_logo} layout="intrinsic" width={25} height={0} alt="Gmail Icon" /></a>
         </div>
       </div>
     </footer>

@@ -28,7 +28,7 @@
 }
 
 .container .contactInfo {
-    background:linear-gradient(180deg, #5b6776e1 0%, #384b5b93 100%);
+    background:linear-gradient(180deg, #cfe5ffe1 0%, #c9e7ff93 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@
 }
 
 .container .contactInfo h2 {
-    color: #fff;
+    color: #000000;
     font-size: 24px;
     font-weight: 500;
 }
@@ -68,12 +68,12 @@
 
 .container .contactInfo ul.info li span img {
     max-width: 100%;
-    filter: invert(1);
+    filter: invert(0);
     opacity: 0.5;
 }
 
 .container .contactInfo ul.info li span:nth-child(2) {
-    color: #fff;
+    color: #000000;
     margin-left: 10px;
     font-weight: 300;
     opacity: 0.5;
@@ -87,6 +87,7 @@
 .container .contactInfo ul.socialIcon {
     position: relative;
     display: flex;
+    align-items: center;
 }
 
 .container .contactInfo ul.socialIcon li {
@@ -95,7 +96,7 @@
 }
 
 .container .contactInfo ul.socialIcon li a img {
-    filter: invert(1);
+    filter: invert(0);
     opacity: 0.5;
 }
 

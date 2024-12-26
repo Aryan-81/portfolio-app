@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from './ContactForm.module.css';
 import data from '/public/data/homeData.json';
+import Image from 'next/image';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ const ContactForm = () => {
               <h2>Contact Info</h2>
               <ul className={styles.info}>
                 <li>
-                  <span><img src='/assets/location.png' alt="location" /></span>
+                  <span><Image src='/assets/location.png' width={30} height={30} alt="location" /></span>
                   <span>
                     Indian Institute of Technology Jammu <br />
                     Jagti, NH-44 , PO Nagrota <br />
@@ -65,15 +66,15 @@ const ContactForm = () => {
                   </span>
                 </li>
                 <li>
-                  <span><img src='/assets/mail.png' alt="mail" /></span>
+                  <span><Image src='/assets/mail.png' width={30} height={30} alt="mail" /></span>
                   <span>{data.email}</span>
                 </li>
               </ul>
             </div>
             <ul className={styles.socialIcon}>
-              <li><a href="#" target='_blank'><img src='/assets/github.svg' width='25px' alt="social1" /></a></li>
-              <li><a href="#"><img src='/assets/3.png' alt="social2" /></a></li>
-              <li><a href="#"><img src='/assets/5.png' alt="social3" /></a></li>
+              <li><a href={data.gScholar}><Image src='/assets/gscholar.png' width={30} height={30} alt="social1" /></a></li>
+              <li><a href={data.linkedin}><Image src='/assets/linkedin.svg' width={25} height={25} alt="social2" /></a></li>
+              {/* <li><a href="#"><img src='/assets/5.png' alt="social3" /></a></li> */}
             </ul>
           </div>
 
@@ -106,7 +107,7 @@ const ContactForm = () => {
                   name="mobileNumber"
                   value={formData.mobileNumber}
                   onChange={handleChange}
-                  
+                  required
                 />
                 <span>Mobile Number</span>
               </div>
