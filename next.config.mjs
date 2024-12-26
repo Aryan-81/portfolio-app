@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   assetPrefix: './', 
-  basePath: '/aryan-81.github.io/portfolio-app/',  
+  basePath: '/aryan-81.github.io/portfolio-app',  
 };
 
 export default nextConfig;
