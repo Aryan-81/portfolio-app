@@ -55,9 +55,8 @@
     transform: scale(0);    
 }
 .show-info{
-    position: sticky;
+    position: relative;
     cursor:pointer;
-    top: 0;
     border: none;
     padding-block: 0;
     padding-inline: 0;
@@ -68,7 +67,11 @@
     padding: 10px ;
     background-color: #ffffff00;
 }
-
+.img-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .img-info .arrow{
     position: relative;
 }
@@ -108,7 +111,7 @@
     padding: 0 2%;
 }
 .eq-card:hover .img-info {
-    transform: translate(0%, calc(100% - 2.5rem)) scale(0.9);
+    transform: translate(0%, calc(100% - 3em)) scale(0.9);
 }
 
 .eq-card:hover .info-icon{
@@ -118,6 +121,9 @@
     transform: scale(0) !important;
 }
 .img-info.active{
+    top:0 !important;
+    height: 100%;
+    overflow: auto;
     border-radius: 0 !important;
     transform: none !important;
 }

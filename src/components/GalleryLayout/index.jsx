@@ -67,7 +67,7 @@ const Gallery = () => {
                   className={styles['Card-image']}
                   style={{ backgroundImage: `url(${images[0]})` }}
                 >
-                  <Image src={images[0]} width={25} height={0} alt="img" />
+                  <img src={images[0]} alt="img" />
                 </div>
               </div>
               <div className={styles['Card-title']}>
@@ -86,7 +86,7 @@ const Gallery = () => {
                 <div className={styles['Gallery-images']}>
                   {images.map((image, k) => (
                     <div key={k} className={styles['Gallery-image']}>
-                      <Image key={`${folderName}-${image}-${k}`} src={image} height={10} width={10} alt="img" />
+                      <img key={`${folderName}-${image}-${k}`} src={image}  alt="img" />
                     </div>
                   ))}
                 </div>
