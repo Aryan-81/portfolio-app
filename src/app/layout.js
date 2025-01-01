@@ -4,7 +4,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Portfolio",
+  title: "DDPIL_IITJMU",
   description: "portfolio",
 };
 

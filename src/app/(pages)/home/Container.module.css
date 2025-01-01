@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 .ctr-1 {
   height: fit-content;
@@ -29,40 +30,57 @@
   padding-bottom: 20px;
 }
 
-.Research > h4 {
+.Research>h4 {
   font-family: "Roboto";
 }
-.Research > p {
+
+.Research>p {
   font-size: 1em;
   font-weight: 500;
   line-height: 100%;
   font-family: "Gill Sans", sans-serif;
 }
-.Research > h2 {
+
+.Research>h2 {
   margin: .83em 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ff4805;
 }
-.Research > ul {
+
+.Research>ul {
   list-style-type: none;
 }
-.Research > ul > li {
-  font-family: monospace;
-  font-size: 1.2em;
+
+.Research>ul>li {
+  /* font-family: monospace; */
+
+  /* font-size: 1.2em;
+  line-height: 150%;
+  padding-left: 1.2em;
+  text-indent: -1em; */
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
   padding-left: 1.2em;
   text-indent: -1em;
-}.Research > ul > li::before {
+  margin: 0;
+}
+
+.Research>ul>li::before {
   content: '• ';
   color: black;
   padding-right: 0.5em;
-}.Research ul li:nth-child(even) {
+}
+
+.Research ul li:nth-child(even) {
 
   background-color: rgba(229, 238, 243, 0.845);
 }
 
 
-@media screen and (max-width: 900px){
-  .ctr-1{
+@media screen and (max-width: 900px) {
+  .ctr-1 {
     width: 96%;
     min-width: 250px;
   }
