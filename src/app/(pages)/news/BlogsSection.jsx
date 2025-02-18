@@ -1,5 +1,5 @@
 import styles from './BlogsSection.module.css'; // Import CSS module
-import data from '/public/data/newsData.json';
+import data from '@/data/newsData.json';
 
 const BlogsSection = () => {
   return (

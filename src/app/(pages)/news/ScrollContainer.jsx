@@ -1,5 +1,5 @@
 import styles from './ScrollContainer.module.css'; // Import CSS module
-import data from '/public/data/newsData.json'
+import data from '@/data/newsData.json'
 function ScrollContainer() {
   return (
     <div className={styles.scrollContainer}>

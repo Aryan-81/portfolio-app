@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from './GalleryLayout.module.css';
 import Image from "next/image";
+
 function openGallery(id) {
   closeAll();
   const gallery = document.getElementById('gallery-' + id);

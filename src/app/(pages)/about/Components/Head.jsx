@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './Head.module.css';
-import data from "/public/data/homeData";
+import data from "@/data/homeData";
 const clg_img = '/assets/clg_img.jpeg';
 const profile_pic = '/assets/professer_pic.jpg';
 

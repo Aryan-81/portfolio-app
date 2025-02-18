@@ -1,6 +1,6 @@
 import Card from '@/components/LabEqCard';
 import styles from './LabEq.module.css'; // Import your CSS module
-import datas from '/public/data/labEqpData.json'
+import datas from '@/data/labEqpData.json'
 
 function LabEq() {
   return (

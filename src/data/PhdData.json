@@ -1,0 +1,14 @@
+[
+    {
+        "name": "John Doe",
+        "src": "/assets/unknownman.png",
+        "duration": "2023-25",
+        "research": "something or may not"
+    },
+    {
+        "name": "adam",
+        "src": "/assets/unknownman.png",
+        "duration": "2023-25",
+        "research": "something or may not"
+    }
+]

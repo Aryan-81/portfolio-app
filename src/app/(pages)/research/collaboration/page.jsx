@@ -1,7 +1,7 @@
 
 import Header from '@/components/Header'
 import CollabCard from '@/components/CollabCard';
-import data from '/public/data/collaborationData'
+import data from '@/data/collaborationData'
 
 const bkHeaderimg = '/collab/colab.webp';
 

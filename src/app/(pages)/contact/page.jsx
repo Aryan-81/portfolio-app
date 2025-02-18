@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './ContactForm.module.css';
-import data from '/public/data/homeData.json';
+import data from '@/data/homeData.json';
 import Image from 'next/image';
 
 const ContactForm = () => {

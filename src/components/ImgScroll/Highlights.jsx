@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import styles from './Highlights.module.css';
-import images from "/public/data/highlightData.json"
+import images from "@/data/highlightData.json"
 // 
 
 export default function HorizontalScroll() {

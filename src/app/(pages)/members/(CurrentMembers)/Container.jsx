@@ -1,6 +1,6 @@
 import Card from './Card';
 import styles from './Container.module.css'; 
-import datas from "public/data/currentMemberData.json";
+import datas from "@/data/currentMemberData.json";
 
 function Container() {
   const cardComponents = datas.map((data, index) => (

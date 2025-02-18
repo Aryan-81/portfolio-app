@@ -1,6 +1,7 @@
+'use client';
 import styles from './hero.module.css'; 
 import LinkIcon from '@/components/LinkIcon';
-import data from '/public/data/homeData';
+import data from '@/data/homeData';
 // const bond_svg = '/assets/picsvg_download.svg';
 const bk = '/assets/main.JPG'
 

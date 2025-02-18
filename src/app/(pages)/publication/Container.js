@@ -1,6 +1,6 @@
 import styles from './Container.module.css'
 import LinkIcon from '@/components/LinkIcon'
-import Datas from '/public/data/publicationData.json'
+import Datas from '@/data/publicationData.json'
 
 function Container() {
     return (
