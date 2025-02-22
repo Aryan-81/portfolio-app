@@ -1,80 +1,55 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 
-export default function UGStudents() {
-  const [projects, setProjects] = useState([]);
-  // Function to sort by Duration in descending order
-  const sortByDuration = (data) => {
-    return data.sort((a, b) => {
-      // Parse the duration to numeric values
-      const durationA = a['Year'];
-      const durationB = b['Year'];
-      
-      return durationB - durationA;
-    });
-  }
+export default function InternshipStudents() {
+  const [internships, setInternships] = useState([]);
+
+  // Function to sort by year in descending order
+  const sortByYear = (data) => {
+    return data.sort((a, b) => b['Duration'].localeCompare(a['Duration']));
+  };
+
   useEffect(() => {
-    // Fetch the CSV file and parse it
     fetch('/data/internData.csv')
       .then((response) => response.text())
       .then((data) => {
-        const parsedData = Papa.parse(data, { header: true });
-        const sortedData = sortByDuration(parsedData.data);
-        setProjects(sortedData);
+        const parsedData = Papa.parse(data, { header: true }).data;
+        const sortedData = sortByYear(parsedData);
+        setInternships(sortedData);
       })
       .catch((error) => console.error('Error loading CSV:', error));
   }, []);
-  
 
   return (
-    <div style={{ padding: '0 20px', fontFamily: 'Arial, sans-serif',minHeight:'70vh' }}>
-      <table
-        style={{
-          width: '100%',
-          borderCollapse: 'collapse',
-          marginBottom: '5em',
-        }}
-      >
-        <thead>
-          <tr>
-            <th style={tableHeaderStyle}>Sr No.</th>
-            <th style={tableHeaderStyle}>Name</th>
-            <th style={tableHeaderStyle}>Qualifcations</th>
-            <th style={tableHeaderStyle}>Schemes</th>
-            <th style={tableHeaderStyle}>Year</th>
-            <th style={tableHeaderStyle}>Duration</th>
-            <th style={tableHeaderStyle}>Project Title</th>
-            <th style={tableHeaderStyle}>University</th>
-          </tr>
-        </thead>
-        <tbody>
-          {projects.map((project, index) => (
-            <tr key={index}>
-              <td style={tableCellStyle}>{project['Sr No.']}</td>
-              <td style={tableCellStyle}>{project['Name']}</td>
-              <td style={tableCellStyle}>{project['Pursuing Qualifications']}</td>
-              <td style={tableCellStyle}>{project['Schemes']}</td>
-              <td style={tableCellStyle}>{project['Year']}</td>
-              <td style={tableCellStyle}>{project['Duration']}</td>
-              <td style={tableCellStyle}>{project['Project']}</td>
-              <td style={tableCellStyle}>{project['University']}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div style={{ padding: '20px', minHeight: '70vh' }}>
+      <Typography variant="h4" gutterBottom style={{ textAlign: 'center', fontWeight: 'bold' }}>
+        Internship Programs
+      </Typography>
+      <TableContainer component={Paper} elevation={3} style={{ maxWidth: '90%', margin: 'auto' }}>
+        <Table>
+          <TableHead>
+            <TableRow style={{ backgroundColor: '#1976d2' }}>
+              {['Sr No.', 'Name', 'Internship Program', 'Course', 'University', 'Duration'].map((header) => (
+                <TableCell key={header} style={{ color: '#fff', fontWeight: 'bold' }}>{header}</TableCell>
+              ))}
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {internships.map((internship, index) => (
+              <TableRow key={index} hover>
+                <TableCell>{index + 1}</TableCell>
+                <TableCell>{internship['Name']}</TableCell>
+                <TableCell>{internship['Internship Program']}</TableCell>
+                <TableCell>{internship['Course']}</TableCell>
+                <TableCell>{internship['University']}</TableCell>
+                <TableCell>{internship['Duration']}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </div>
   );
 }
-
-const tableHeaderStyle = {
-  border: '1px solid #ddd',
-  padding: '8px',
-  backgroundColor: '#f2f2f2',
-  textAlign: 'left',
-};
-
-const tableCellStyle = {
-  border: '1px solid #ddd',
-  padding: '8px',
-};

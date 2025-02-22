@@ -1,74 +1,54 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 
 export default function UGStudents() {
   const [projects, setProjects] = useState([]);
-  // Function to sort by Duration in descending order
-  const sortByDuration = (data) => {
-    return data.sort((a, b) => {
-      // Parse the duration to numeric values
-      const durationA = a['year'];
-      const durationB = b['year'];
-      
-      return durationB - durationA;
-    });
-  }
+
+  // Function to sort by year in descending order
+  const sortByYear = (data) => {
+    return data.sort((a, b) => b['year'] - a['year']);
+  };
+
   useEffect(() => {
-    // Fetch the CSV file and parse it
     fetch('/data/ugData.csv')
       .then((response) => response.text())
       .then((data) => {
-        const parsedData = Papa.parse(data, { header: true });
-        const sortedData = sortByDuration(parsedData.data);
+        const parsedData = Papa.parse(data, { header: true }).data;
+        const sortedData = sortByYear(parsedData);
         setProjects(sortedData);
       })
       .catch((error) => console.error('Error loading CSV:', error));
   }, []);
-  
 
   return (
-    <div style={{ padding: '0 20px', fontFamily: 'Arial, sans-serif',minHeight:'70vh' }}>
-      <table
-        style={{
-          width: '100%',
-          borderCollapse: 'collapse',
-          marginBottom: '5em',
-        }}
-      >
-        <thead>
-          <tr>
-            <th style={tableHeaderStyle}>Sr No.</th>
-            <th style={tableHeaderStyle}>Name</th>
-            <th style={tableHeaderStyle}>Duration</th>
-            <th style={tableHeaderStyle}>Project Title</th>
-            <th style={tableHeaderStyle}>Year</th>
-          </tr>
-        </thead>
-        <tbody>
-          {projects.map((project, index) => (
-            <tr key={index}>
-              <td style={tableCellStyle}>{project['SrNo.']}</td>
-              <td style={tableCellStyle}>{project['Name']}</td>
-              <td style={tableCellStyle}>{project['Duration']}</td>
-              <td style={tableCellStyle}>{project['Project title']}</td>
-              <td style={tableCellStyle}>{project['year']}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div style={{ padding: '20px', minHeight: '70vh' }}>
+      <Typography variant="h4" gutterBottom style={{ textAlign: 'center', fontWeight: 'bold' }}>
+        Undergraduate Student Projects
+      </Typography>
+      <TableContainer component={Paper} elevation={3} style={{ maxWidth: '90%', margin: 'auto' }}>
+        <Table>
+          <TableHead>
+            <TableRow style={{ backgroundColor: '#1976d2' }}>
+              {['Sr No.', 'Name', 'Course', 'Project Title', 'Duration'].map((header) => (
+                <TableCell key={header} style={{ color: '#fff', fontWeight: 'bold' }}>{header}</TableCell>
+              ))}
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {projects.map((project, index) => (
+              <TableRow key={index} hover>
+                <TableCell>{project['SrNo']}</TableCell>
+                <TableCell>{project['Name']}</TableCell>
+                <TableCell>{project['Course']}</TableCell>
+                <TableCell>{project['Project Title']}</TableCell>
+                <TableCell>{project['Duration']}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </div>
   );
 }
-
-const tableHeaderStyle = {
-  border: '1px solid #ddd',
-  padding: '8px',
-  backgroundColor: '#f2f2f2',
-  textAlign: 'left',
-};
-
-const tableCellStyle = {
-  border: '1px solid #ddd',
-  padding: '8px',
-};

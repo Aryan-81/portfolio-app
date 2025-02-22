@@ -7,6 +7,7 @@ function Activity(){
         <>
         <Header title="Activities"/>
         <Highlights />
+        <h1 style={{textAlign:'center',margin:'30px auto'}}>Gallery</h1>
         <Gallery />
         </>
     )

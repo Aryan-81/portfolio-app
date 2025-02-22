@@ -108,12 +108,6 @@ export default function Nav_bar() {
         >
           <Link href="/publication">Publications</Link>
         </div>
-        <div
-          className={`${styles['obj']} ${activeLink === 'Contact' ? styles['active'] : ''}`}
-          onClick={(e) => handleNavClick(e, 'Contact')}
-        >
-          <Link href="/contact">Contact</Link>
-        </div>
         <div ref={indicRef} className={styles['indic']} style={indicatorStyle}></div>
       </div>
       <button className="hamburger hamburger--elastic" id="hamburgerButton" type="button">

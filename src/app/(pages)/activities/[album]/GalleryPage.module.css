@@ -1,0 +1,91 @@
+/* General Page Styling */
+.albumPage {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Back Button */
+.backButton {
+    background: #0070f3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+}
+
+.backButton:hover {
+    background: #0056c7;
+    transform: scale(1.05);
+}
+
+/* Image Grid */
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Image Wrapper for Click Effect */
+.imageWrapper {
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styles */
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.image:hover {
+    opacity: 0.85;
+}
+
+
+.masonryGrid {
+    display: flex;
+    width: 100%;
+}
+
+.masonryColumn {
+    background-clip: padding-box;
+}
+
+.imageWrapper {
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+
+    margin: 20px;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 8px;
+}
